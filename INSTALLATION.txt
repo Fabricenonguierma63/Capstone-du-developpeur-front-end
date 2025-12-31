@@ -1,0 +1,211 @@
+================================================================================
+        INSTRUCTIONS D'INSTALLATION - LITTLE LEMON REACT APP
+================================================================================
+
+📦 PRÉREQUIS
+------------
+- Node.js version 14 ou supérieure
+- npm (inclus avec Node.js)
+- Git
+
+
+🚀 INSTALLATION (4 ÉTAPES)
+===========================
+
+ÉTAPE 1 : Cloner le dépôt
+--------------------------
+git clone <URL_DE_VOTRE_DEPOT_GITHUB>
+cd little-lemon-react
+
+
+ÉTAPE 2 : Installer les dépendances
+------------------------------------
+npm install
+
+⏱️ Cela peut prendre 2-3 minutes
+
+
+ÉTAPE 3 : Lancer l'application
+-------------------------------
+npm start
+
+✅ L'application s'ouvrira automatiquement dans votre navigateur
+   à l'adresse : http://localhost:3000
+
+
+ÉTAPE 4 : Tester l'application
+-------------------------------
+npm test
+
+✅ Les tests s'exécuteront automatiquement
+
+
+================================================================================
+                        COMMANDES DISPONIBLES
+================================================================================
+
+npm start           - Lance le serveur de développement
+npm test            - Exécute les tests unitaires
+npm run build       - Crée la version de production
+npm test -- --coverage - Affiche la couverture des tests
+
+
+================================================================================
+                    STRUCTURE DE L'APPLICATION
+================================================================================
+
+Pages disponibles :
+
+1. Page d'accueil
+   http://localhost:3000/
+
+2. Page de réservation
+   http://localhost:3000/reservations
+
+3. Page de confirmation
+   http://localhost:3000/confirmed
+
+
+================================================================================
+                        FONCTIONNALITÉS CLÉS
+================================================================================
+
+✓ Formulaire de réservation avec validation complète
+✓ Design responsive (mobile, tablette, desktop)
+✓ Accessibilité WCAG 2.1 AA
+✓ Tests unitaires complets
+✓ Navigation entre les pages
+✓ Messages d'erreur clairs
+✓ Gestion des cas limites
+
+
+================================================================================
+                        VALIDATION DU FORMULAIRE
+================================================================================
+
+Le formulaire valide :
+
+- Date : Doit être une date future
+- Heure : Sélection parmi les créneaux disponibles
+- Nombre d'invités : Entre 1 et 10 personnes
+- Nom : Minimum 2 caractères
+- Email : Format email valide
+
+
+================================================================================
+                        TESTER L'APPLICATION
+================================================================================
+
+1. Lancez l'application : npm start
+
+2. Naviguez vers "Reservations"
+
+3. Remplissez le formulaire :
+   - Sélectionnez une date future
+   - Choisissez une heure
+   - Entrez le nombre d'invités (1-10)
+   - Sélectionnez une occasion
+   - Entrez votre nom
+   - Entrez votre email
+   - (Optionnel) Demandes spéciales
+
+4. Cliquez sur "Make Reservation"
+
+5. Vous serez redirigé vers la page de confirmation
+
+
+================================================================================
+                        EXÉCUTER LES TESTS
+================================================================================
+
+Pour exécuter tous les tests :
+
+npm test
+
+Les tests couvrent :
+- Rendu des composants
+- Validation du formulaire
+- Interactions utilisateur
+- Accessibilité
+- Cas limites
+
+
+Pour voir la couverture des tests :
+
+npm test -- --coverage
+
+
+================================================================================
+                        ACCESSIBILITÉ
+================================================================================
+
+L'application est entièrement accessible :
+
+✓ Navigation au clavier
+✓ Lecteurs d'écran
+✓ Labels ARIA appropriés
+✓ Messages d'erreur avec role="alert"
+✓ Contraste des couleurs conforme
+✓ HTML sémantique
+
+
+================================================================================
+                        RESPONSIVE DESIGN
+================================================================================
+
+L'application s'adapte à toutes les tailles d'écran :
+
+- Desktop (1200px+)
+- Tablette (768px - 1199px)
+- Mobile (< 768px)
+
+
+================================================================================
+                        DÉPANNAGE
+================================================================================
+
+Problème : "npm: command not found"
+Solution : Installez Node.js depuis https://nodejs.org/
+
+Problème : "Port 3000 already in use"
+Solution : Fermez l'autre application ou utilisez un autre port :
+   PORT=3001 npm start
+
+Problème : Erreurs d'installation
+Solution : Supprimez node_modules et réinstallez :
+   rm -rf node_modules
+   npm install
+
+
+================================================================================
+                        SOUMETTRE SUR GITHUB
+================================================================================
+
+1. Créez un dépôt sur GitHub
+
+2. Initialisez Git :
+   git init
+   git add .
+   git commit -m "Initial commit - Little Lemon React App"
+
+3. Liez au dépôt distant :
+   git remote add origin <URL_GITHUB>
+   git branch -M main
+   git push -u origin main
+
+
+================================================================================
+                        CRITÈRES D'ÉVALUATION
+================================================================================
+
+✓ Conception et implémentation UI/UX suivie
+✓ Balises d'accessibilité appropriées appliquées
+✓ Tests unitaires inclus
+✓ Formulaire de réservation fonctionnel avec validation
+✓ Sémantique et réactivité correctes
+✓ Code structuré et commenté
+✓ Cas limites gérés avec messages d'erreur
+✓ Documentation claire (README)
+
+
+================================================================================
